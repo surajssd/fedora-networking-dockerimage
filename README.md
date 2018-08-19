@@ -15,7 +15,7 @@ Run using following command:
 
 ```bash
 eval `minikube docker-env`
-docker run -it --privileged --pid host --net host --entrypoint bash surajd/fedora-networking
+docker run -it --privileged --pid host --net host surajd/fedora-networking bash
 ```
 
 **Note**: If you are using minishift then replace above `minikube` with `minishift`.
@@ -26,13 +26,12 @@ docker run -it --privileged --pid host --net host --entrypoint bash surajd/fedor
 kubectl run -it debug-network-$RANDOM --image surajd/fedora-networking --restart=Never
 ```
 
-
 ## Tools
 
 In this machine you can run following notable tools:
 
-- htop
-- netstat
-- dig
-- ip
-- ifconfig
+- `htop`
+- `netstat`
+- `dig`
+- `ip`
+- `ifconfig`
