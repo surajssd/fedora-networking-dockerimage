@@ -22,8 +22,16 @@ docker run -it --privileged --pid host --net host surajd/fedora-networking bash
 
 ### Debugging in Kubernetes cluster
 
-```
+To start an interactive terminal
+
+```bash
 kubectl run -it debug-network-$RANDOM --image surajd/fedora-networking --restart=Never
+```
+
+To clean all the debug pods
+
+```bash
+kubectl delete pod $(kubectl get pods | grep ^debug | awk '{print $1}')
 ```
 
 ## Tools
@@ -35,3 +43,4 @@ In this machine you can run following notable tools:
 - `dig`
 - `ip`
 - `ifconfig`
+- `traceroute`
