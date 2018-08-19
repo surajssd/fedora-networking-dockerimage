@@ -25,7 +25,7 @@ docker run -it --privileged --pid host --net host surajd/fedora-networking bash
 To start an interactive terminal
 
 ```bash
-kubectl run -it debug-network-$RANDOM --image surajd/fedora-networking --restart=Never
+kubectl run -it debug-network-$RANDOM --image-pull-policy=Always --image surajd/fedora-networking --restart=Never
 ```
 
 To clean all the debug pods
