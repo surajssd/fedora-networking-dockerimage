@@ -18,14 +18,12 @@ eval `minikube docker-env`
 docker run -it --privileged --pid host --net host surajd/fedora-networking bash
 ```
 
-**Note**: If you are using minishift then replace above `minikube` with `minishift`.
-
 ### Debugging in Kubernetes cluster
 
 To start an interactive terminal
 
 ```bash
-kubectl run -it debug-network-$RANDOM --image-pull-policy=Always --image surajd/fedora-networking --restart=Never
+kubectl run -it debug-network-$RANDOM --image-pull-policy=Always --image=surajd/fedora-networking --restart=Never
 ```
 
 To clean all the debug pods
@@ -44,3 +42,4 @@ In this machine you can run following notable tools:
 - `ip`
 - `ifconfig`
 - `traceroute`
+- `nslookup`
