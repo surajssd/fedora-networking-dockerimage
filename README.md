@@ -1,5 +1,8 @@
 # Fedora image with debug tools
 
+[![](https://images.microbadger.com/badges/image/surajd/fedora-networking.svg)](https://microbadger.com/images/surajd/fedora-networking "Download size of image and the number of layers")
+[![](https://images.microbadger.com/badges/version/surajd/fedora-networking.svg)](https://microbadger.com/images/surajd/fedora-networking "Latest version on Docker Hub")
+
 ## Inspiration
 
 - This is a docker image that has essesntial tools to look what is happening inside a boot2docker machine. Since this operating system is
