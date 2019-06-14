@@ -8,5 +8,6 @@ RUN dnf install --setopt=tsflags=nodocs -y \
     bind-utils \
     iputils \
     traceroute \
+    tcpdump \
     && \
     dnf clean all
