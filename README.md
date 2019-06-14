@@ -40,3 +40,5 @@ In this machine you can run following notable tools:
 - `ifconfig`
 - `traceroute`
 - `nslookup`
+- `tcpdump`
+- `nc`
