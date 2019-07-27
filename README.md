@@ -42,3 +42,4 @@ In this machine you can run following notable tools:
 - `nslookup`
 - `tcpdump`
 - `nc`
+- `iptables`

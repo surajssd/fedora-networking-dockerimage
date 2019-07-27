@@ -10,5 +10,6 @@ RUN dnf install --setopt=tsflags=nodocs -y \
     traceroute \
     tcpdump \
     nmap-ncat \
+    iptables \
     && \
     dnf clean all
