@@ -43,3 +43,4 @@ In this machine you can run following notable tools:
 - `tcpdump`
 - `nc`
 - `iptables`
+- `telnet`

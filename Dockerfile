@@ -11,5 +11,6 @@ RUN dnf install --setopt=tsflags=nodocs -y \
     tcpdump \
     nmap-ncat \
     iptables \
+    telnet \
     && \
     dnf clean all
