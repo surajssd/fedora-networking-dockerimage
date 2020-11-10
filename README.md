@@ -18,7 +18,7 @@ Run using following command:
 
 ```bash
 eval `minikube docker-env`
-docker run -it --privileged --pid host --net host surajd/fedora-networking bash
+docker run -it --privileged --pid host --net host quay.io/surajd/fedora-networking bash
 ```
 
 ### Debugging in Kubernetes cluster
@@ -26,7 +26,7 @@ docker run -it --privileged --pid host --net host surajd/fedora-networking bash
 To start an interactive terminal
 
 ```bash
-kubectl run -it --rm debug-network-$RANDOM --image-pull-policy=Always --image=surajd/fedora-networking --restart=Never bash
+kubectl run -it --rm debug-network-$RANDOM --image-pull-policy=Always --image=quay.io/surajd/fedora-networking --restart=Never bash
 ```
 
 ## Tools
