@@ -1,4 +1,4 @@
-FROM  registry.fedoraproject.org/fedora:32
+FROM  registry.fedoraproject.org/fedora:33
 
 RUN dnf install --setopt=tsflags=nodocs -y \
     htop \
